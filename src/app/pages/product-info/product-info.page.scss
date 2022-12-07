@@ -1,0 +1,56 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  grid-template-areas:
+    "preview preview"
+    "name name"
+    "price price"
+    "add add"
+    "description description";
+}
+
+@media (min-width: 481px) {
+  .product {
+    grid-template-areas:
+      "preview name"
+      "preview price"
+      "preview add"
+      "description description";
+  }
+}
+
+.preview {
+  grid-area: preview;
+  justify-self: center;
+
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.name {
+  grid-area: name;
+  font-size: 1.5rem;
+}
+
+.price {
+  grid-area: price;
+  //   justify-self: end;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.description {
+  grid-area: description;
+}
+
+.add {
+  grid-area: add;
+}
+
+p {
+  margin: 0;
+}

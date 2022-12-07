@@ -1,0 +1,8 @@
+<section (click)="handleClick(profile.id)" [ngStyle]="{'cursor': 'pointer'}">
+  <h6>{{profile.name}}</h6>
+
+  <p>{{profile.info}}</p>
+  <p>{{profile.date}}</p>
+  <p>{{profile.status}}</p>
+  <img [src]="profile.img" alt="profile image">
+</section>

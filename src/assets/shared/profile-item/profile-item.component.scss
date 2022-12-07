@@ -1,0 +1,23 @@
+section {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  position: relative;
+
+  padding: 1rem;
+}
+
+section img {
+  position: absolute;
+
+  right: 0;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 150px;
+  height: 150px;
+
+  border: 1px solid black;
+}

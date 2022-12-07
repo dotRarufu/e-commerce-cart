@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="filter-buttons">
+    <ion-button (click)="handleFilterClick('sale')">Sale</ion-button>
+    <ion-button (click)="handleFilterClick('new')">New</ion-button>
+    <ion-button (click)="handleFilterClick('all')">All</ion-button>
+  </div>
+
+  <app-product-item *ngFor="let product of filteredProducts" [product]="product"></app-product-item>
+
+</ion-content>

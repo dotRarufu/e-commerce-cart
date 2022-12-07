@@ -1,0 +1,46 @@
+<!-- <ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="menu">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu A</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding menu">
+    <ion-list>
+      <ion-item class="selected">
+        <ion-label routerLink="/home">Home</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/about">About</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label routerLink="/contact">Contact</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu> -->
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile">
+    <div>Good Day, <span>Joe</span></div>
+    <img src="../../../assets/joe.jpg" alt="user profile">
+  </div>
+
+  <app-carousel></app-carousel>
+
+  <h1 class="products-header">Featured Products</h1>
+  <app-product-item *ngFor="let product of products" [product]="product"></app-product-item>
+
+
+</ion-content>

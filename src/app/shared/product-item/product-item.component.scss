@@ -1,0 +1,58 @@
+.container {
+  border: 2px solid #333;
+  padding: 1rem;
+
+  margin: 1rem 0;
+
+  border-radius: 8px;
+
+  display: grid;
+  column-gap: 4px;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "name name preview"
+    "desc desc preview"
+    "price price preview";
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  grid-area: name;
+
+  font-weight: 500;
+
+  font-size: 1.5rem;
+}
+
+.price {
+  grid-area: price;
+
+  font-size: 1.25rem;
+
+  align-self: flex-end;
+  font-weight: 500;
+}
+
+.description {
+  grid-area: desc;
+  font-size: 1rem;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  overflow: hidden;
+  word-wrap: normal;
+  // align-self: center;
+  max-height: 3rem;
+}
+
+img {
+  grid-area: preview;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+  background: red;
+}

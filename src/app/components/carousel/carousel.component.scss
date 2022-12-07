@@ -1,0 +1,13 @@
+.container {
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.slide img {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+
+  // background: blue;
+}

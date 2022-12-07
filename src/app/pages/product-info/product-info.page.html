@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="../">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{product.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="product">
+    <img class="preview" src="../../../assets/products/{{product.img}}" alt="product preview">
+    <p class="name">{{product.name}}</p>
+    <p class="price">₱{{product.price}}</p>
+    <ion-button (click)="handleAddCartClick(product.id)">
+      <ion-icon name="cart-outline"></ion-icon>Add to Cart
+    </ion-button>
+    <p class="description">{{product.description}}</p>
+  </div>
+
+</ion-content>
